@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Painel VIP GitHub</title>
+<title>Painel VIP Auto PRO</title>
 <style>
 body{background:#020617;color:#00ff9c;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
 .card{background:#020617;padding:20px;border-radius:15px;width:420px;border:1px solid #00ff9c;text-align:center}
@@ -12,32 +12,38 @@ pre{margin-top:10px;font-size:12px;background:#000;padding:10px;border-radius:10
 </head>
 <body>
 <div class="card">
-<h3>💎 VIP APKBUGADO (AUTO)</h3><button onclick="gerar()">GERAR LISTA</button> <button onclick="copiar()">COPIAR</button>
+<h3>💎 VIP APKBUGADO AUTO PRO</h3><button onclick="gerar()">GERAR LISTA</button> <button onclick="copiar()">COPIAR</button>
 
 <pre id="out">Clique em GERAR...</pre></div>
-<script>// 🔗 COLOQUE AQUI SEU TXT DO GITHUB const urlTXT = "https://raw.githubusercontent.com/SEUUSER/SEUREPO/main/combos.txt";
+<script>const total = 50; // 🔥 QUANTIDADE DE ARQUIVOS combo1 até combo50 const base = "https://raw.githubusercontent.com/SEUUSER/REPO/main/";
 
-function gerar(){ fetch(urlTXT) .then(res=>res.text()) .then(txt=>{
+async function gerar(){ let tentativas = 0; let maxTentativas = 10;
 
-let banco=[];
+while(tentativas < maxTentativas){
 
-let blocos = txt.split("Host");
+let n = Math.floor(Math.random() * total) + 1; let url = ${base}combo${n}.txt;
 
-blocos.forEach(b=>{ let host = (b.match(/(http[^\s]+)/)||[])[1]; let user = (b.match(/Usuário.►\s(.)/)||[])[1]; let pass = (b.match(/Senha.►\s*(.*)/)||[])[1];
+try{ let res = await fetch(url); if(!res.ok) throw "erro";
 
-if(host && user && pass){ banco.push({host,user,pass}); } });
+let txt = await res.text();
 
-if(banco.length===0){ document.getElementById('out').textContent="Nenhum combo encontrado!"; return; }
+let host = (txt.match(/Host[:►]\s*(http[^\s]+)/i)||[])[1]; let user = (txt.match(/Usu[aá]rio[:►]\s*(.)/i)||[])[1]; let pass = (txt.match(/Senha[:►]\s(.*)/i)||[])[1];
 
-let c = banco[Math.floor(Math.random()*banco.length)];
+if(host && user && pass){
 
-let m3u = ${c.host}/get.php?username=${c.user}&password=${c.pass}&type=m3u_plus&output=m3u8;
+let m3u = ${host}/get.php?username=${user}&password=${pass}&type=m3u_plus&output=m3u8;
 
-let txtFinal = 📺 LISTA VIP APKBUGADO\n\n🔗 M3U:\n${m3u}\n\n⚙️ XTREAM:\nHost: ${c.host}\nUser: ${c.user}\nPass: ${c.pass};
+let resultado = 📺 LISTA VIP APKBUGADO\n\n🔗 M3U:\n${m3u}\n\n⚙️ XTREAM:\nHost: ${host}\nUser: ${user}\nPass: ${pass};
 
-document.getElementById('out').textContent = txtFinal;
+document.getElementById('out').textContent = resultado; return;
 
-}) .catch(()=>{ document.getElementById('out').textContent="Erro ao carregar combos!"; }); }
+}
+
+}catch(e){ // tenta outro }
+
+tentativas++; }
+
+document.getElementById('out').textContent = "Nenhum combo válido encontrado!"; }
 
 function copiar(){ let texto=document.getElementById('out').textContent; navigator.clipboard.writeText(texto); alert('Copiado!'); }
 
