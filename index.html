@@ -1,52 +1,153 @@
-<!DOCTYPE html><html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Painel VIP Auto PRO</title>
+<title>VIP APKBUGADO</title>
+
 <style>
-body{background:#020617;color:#00ff9c;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
-.card{background:#020617;padding:20px;border-radius:15px;width:420px;border:1px solid #00ff9c;text-align:center}
-button{width:100%;padding:12px;border:none;border-radius:10px;background:#00ff9c;color:#000;font-weight:bold;cursor:pointer;margin-top:10px}
-pre{margin-top:10px;font-size:12px;background:#000;padding:10px;border-radius:10px;white-space:pre-wrap}
+body{
+  background:#020617;
+  color:#00ff9c;
+  font-family:monospace;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  margin:0;
+}
+.card{
+  background:#020617;
+  padding:20px;
+  border-radius:15px;
+  width:420px;
+  border:1px solid #00ff9c;
+  text-align:center;
+}
+button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#00ff9c;
+  color:#000;
+  font-weight:bold;
+  cursor:pointer;
+  margin-top:10px;
+}
+pre{
+  margin-top:10px;
+  font-size:12px;
+  background:#000;
+  padding:10px;
+  border-radius:10px;
+  white-space:pre-wrap;
+}
 </style>
+
 </head>
 <body>
+
 <div class="card">
-<h3>💎 VIP APKBUGADO AUTO PRO</h3><button onclick="gerar()">GERAR LISTA</button> <button onclick="copiar()">COPIAR</button>
+<h3>💎 VIP APKBUGADO</h3>
 
-<pre id="out">Clique em GERAR...</pre></div>
-<script>const total = 50; // 🔥 QUANTIDADE DE ARQUIVOS combo1 até combo50 const base = "https://raw.githubusercontent.com/SEUUSER/REPO/main/";
+<button onclick="gerar()">GERAR LISTA</button>
+<button onclick="copiar()">COPIAR</button>
 
-async function gerar(){ let tentativas = 0; let maxTentativas = 10;
+<pre id="out">Clique em GERAR...</pre>
+</div>
+
+<script>
+
+// 🔥 CONFIGURAÇÃO
+const base = "https://raw.githubusercontent.com/rafflores17-prog/painel-vip/main/";
+const total = 1; // MUDE quando tiver combo2, combo3...
+
+// 🚀 FUNÇÃO PRINCIPAL
+async function gerar(){
+
+document.getElementById('out').textContent = "🔄 Gerando...";
+
+let tentativas = 0;
+let maxTentativas = 10;
 
 while(tentativas < maxTentativas){
 
-let n = Math.floor(Math.random() * total) + 1; let url = ${base}combo${n}.txt;
+try{
 
-try{ let res = await fetch(url); if(!res.ok) throw "erro";
+// 🎲 escolhe arquivo aleatório
+let n = Math.floor(Math.random() * total) + 1;
+let url = `${base}combo${n}.txt`;
+
+// 🔄 busca arquivo
+let res = await fetch(url);
+if(!res.ok) throw "erro";
 
 let txt = await res.text();
 
-let host = (txt.match(/Host[:►]\s*(http[^\s]+)/i)||[])[1]; let user = (txt.match(/Usu[aá]rio[:►]\s*(.)/i)||[])[1]; let pass = (txt.match(/Senha[:►]\s(.*)/i)||[])[1];
+// 🧠 separa blocos
+let blocos = txt.split("─────────────────");
 
-if(host && user && pass){
+// 📦 extrai combos válidos
+let validos = [];
 
-let m3u = ${host}/get.php?username=${user}&password=${pass}&type=m3u_plus&output=m3u8;
+blocos.forEach(b=>{
+  let host = (b.match(/Host[:►]\s*(http[^\s]+)/i)||[])[1];
+  let user = (b.match(/Usu[aá]rio[:►]\s*(.*)/i)||[])[1];
+  let pass = (b.match(/Senha[:►]\s*(.*)/i)||[])[1];
 
-let resultado = 📺 LISTA VIP APKBUGADO\n\n🔗 M3U:\n${m3u}\n\n⚙️ XTREAM:\nHost: ${host}\nUser: ${user}\nPass: ${pass};
+  if(host && user && pass){
+    validos.push({host,user,pass});
+  }
+});
 
-document.getElementById('out').textContent = resultado; return;
+// ⚠️ se não encontrou, tenta outro arquivo
+if(validos.length === 0){
+  tentativas++;
+  continue;
+}
+
+// 🎲 escolhe usuário aleatório
+let c = validos[Math.floor(Math.random()*validos.length)];
+
+// 🔗 monta M3U
+let m3u = `${c.host}/get.php?username=${c.user}&password=${c.pass}&type=m3u_plus&output=m3u8`;
+
+// 💥 resultado final
+let resultado = `📺 LISTA VIP APKBUGADO
+
+🔗 M3U:
+${m3u}
+
+⚙️ XTREAM:
+Host: ${c.host}
+User: ${c.user}
+Pass: ${c.pass}`;
+
+// ✅ mostra na tela
+document.getElementById('out').textContent = resultado;
+
+return;
+
+}catch(e){
+tentativas++;
+}
 
 }
 
-}catch(e){ // tenta outro }
+// ❌ se tudo falhar
+document.getElementById('out').textContent = "❌ Nenhum combo válido encontrado!";
 
-tentativas++; }
+}
 
-document.getElementById('out').textContent = "Nenhum combo válido encontrado!"; }
-
-function copiar(){ let texto=document.getElementById('out').textContent; navigator.clipboard.writeText(texto); alert('Copiado!'); }
+// 📋 copiar
+function copiar(){
+let texto = document.getElementById('out').textContent;
+navigator.clipboard.writeText(texto);
+alert("Copiado!");
+}
 
 </script>
+
 </body>
 </html>
