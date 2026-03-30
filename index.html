@@ -5,15 +5,19 @@
 <title>VIP APKBUGADO MASTER</title><style>
 body{background:#020617;color:#00ff9c;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
 .card{background:#020617;padding:20px;border-radius:15px;width:420px;border:1px solid #00ff9c;text-align:center;box-shadow:0 0 20px #00ff9c33}
-button,input{width:100%;padding:12px;border:none;border-radius:10px;margin-top:10px}
+button,input,a{width:100%;padding:12px;border:none;border-radius:10px;margin-top:10px;text-decoration:none;display:block}
 button{background:#00ff9c;color:#000;font-weight:bold;cursor:pointer}
 input{background:#000;color:#00ff9c;text-align:center}
+a{background:#001f1a;color:#00ff9c;font-size:13px}
 pre{margin-top:10px;font-size:12px;background:#000;padding:10px;border-radius:10px;white-space:pre-wrap;text-align:left}
 .scan{font-size:11px;margin-top:5px;color:#00ffaa}
 .info{font-size:11px;margin-top:5px;color:#00ffaa}
+img{width:80px;margin-bottom:10px}
 </style></head>
-<body><div class="card">
-<h3>💎 VIP APKBUGADO MASTER</h3><input type="password" id="senha" placeholder="Digite código VIP">
+<body><div class="card"><img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png">
+<h3>🔐 GRUPO VIP PAINEL</h3><a href="https://is.gd/th2b0P" target="_blank">💎 ENTRAR GRUPO VIP</a> <a href="https://t.me/ApkBugado" target="_blank">📢 GRUPO ABERTO</a>
+
+<input type="password" id="senha" placeholder="Digite código VIP">
 <button onclick="desbloquear()">DESBLOQUEAR</button><div id="painel" style="display:none;">
 <button onclick="gerar()">GERAR LISTA</button>
 <button onclick="copiar()">COPIAR</button><div class="scan" id="scan"></div>
@@ -23,9 +27,9 @@ pre{margin-top:10px;font-size:12px;background:#000;padding:10px;border-radius:10
 
 const senhaCorreta = "1234";
 const base = "https://raw.githubusercontent.com/rafflores17-prog/painel-vip/main/";
-const total = 1;
+const total = 2;
 
-let usados = []; // 🔥 evita repetição
+let usados = [];
 
 function desbloquear(){
 let s = document.getElementById('senha').value;
@@ -72,7 +76,6 @@ let url = `${base}combo${n}.txt`;
 let res = await fetch(url);
 let txt = await res.text();
 
-let // 🔥 divide por blocos principais (Top Scanner)
 let blocos = txt.split(/┏●-•~¹°”ˆ˜¨/);
 let validos = [];
 
@@ -90,7 +93,7 @@ blocos.forEach(b=>{
 });
 
 if(validos.length === 0){
- usados = []; // 🔄 reset se acabar
+ usados = [];
  tentativas++;
  continue;
 }
