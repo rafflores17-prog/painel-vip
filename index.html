@@ -4,258 +4,272 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PAINEL VIP APKBUGADO PRO</title>
+
 <style>
-    /* Estilo Premium com Visual Hacker */
-    body {
-        background: #000;
-        color: #fff;
-        font-family: 'Courier New', Courier, monospace;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        padding: 20px;
-        box-sizing: border-box;
-    }
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 15px;
+}
 
-    .card-painel {
-        background: #000;
-        width: 100%;
-        max-width: 420px;
-        padding: 25px 20px;
-        border: 1px solid #00ff9c;
-        border-radius: 15px; /* Bordas arredondadas do layout novo */
-        box-shadow: 0 0 25px rgba(0, 255, 156, 0.4); /* Brilho neon flutuante */
-        text-align: center;
-        position: relative;
-    }
+/* CARD */
+.card-painel {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+    border: 1px solid #00ff9c;
+    border-radius: 20px;
+    box-shadow:
+        0 0 30px rgba(0,255,156,0.4),
+        inset 0 0 10px rgba(0,255,156,0.2);
+    text-align: center;
+}
 
-    .title-hacker {
-        color: #00ff9c;
-        font-size: 18px;
-        letter-spacing: 2px;
-        margin: 0 0 15px 0;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
+/* TÍTULO */
+.title-hacker {
+    color: #00ff9c;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
 
-    /* Botões de atalho no topo */
-    .links-topo {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 20px;
-    }
+/* LOGO */
+.logo-vip {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
 
-    .btn-atalho {
-        flex: 1;
-        padding: 12px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 11px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        transition: 0.3s;
-        text-transform: uppercase;
-    }
+.circle {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 3px solid #00ff9c;
+    box-shadow: 
+        0 0 25px #00ff9c,
+        inset 0 0 15px #00ff9c55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
 
-    .btn-vip-grupo {
-        background: #004d2f;
-        color: #00ff9c;
-        border: 1px solid #00ff9c;
-    }
+/* ANEL GIRANDO */
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 2px dashed #00ff9c44;
+    animation: girar 8s linear infinite;
+}
 
-    .btn-free-canal {
-        background: #1a1a1a;
-        color: #00ff9c;
-        border: 1px solid #333;
-    }
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
 
-    .btn-atalho:hover {
-        transform: scale(1.05);
-        filter: brightness(1.2);
-    }
+/* IMAGEM */
+.circle img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter:
+        drop-shadow(0 0 10px #00ff9c)
+        drop-shadow(0 0 25px #00ff9c);
+}
 
-    button, input {
-        width: 100%;
-        padding: 14px;
-        margin-top: 10px;
-        border-radius: 10px;
-        border: none;
-        font-family: 'Courier New', Courier, monospace;
-        box-sizing: border-box;
-        font-weight: bold;
-    }
+/* BOTÕES TOPO */
+.links-topo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
 
-    input {
-        background: #000;
-        color: #fff;
-        border: 1px solid #00ff9c33;
-        text-align: center;
-        outline: none;
-        font-size: 16px;
-    }
+.btn-atalho {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid #00ff9c;
+    color: #00ff9c;
+    background: #012;
+}
 
-    input:focus {
-        border-color: #00ff9c;
-    }
+/* INPUT */
+input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #00ff9c;
+    background: #000;
+    color: #00ff9c;
+    text-align: center;
+    font-size: 15px;
+}
 
-    button {
-        background: #00ff9c;
-        color: #000;
-        cursor: pointer;
-        text-transform: uppercase;
-        box-shadow: 0 0 10px rgba(0, 255, 156, 0.3);
-    }
+/* BOTÕES */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 12px;
+    background: transparent;
+    border: 1px solid #00ff9c;
+    color: #00ff9c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
 
-    button:disabled {
-        background: #333;
-        color: #666;
-        cursor: not-allowed;
-        box-shadow: none;
-    }
+button:hover {
+    background: #00ff9c;
+    color: #000;
+}
 
-    /* 🛠️ AQUI ESTÁ A FIXAÇÃO DO BUG QUE FUROU O LAYOUT */
-    pre#out {
-        background: #0a0a0a;
-        padding: 15px;
-        margin-top: 15px;
-        border-radius: 10px;
-        font-size: 12px;
-        text-align: left;
-        color: #fff;
-        line-height: 1.5;
-        border: 1px dashed #333;
-        
-        /* Novas regras de quebra para links longos */
-        white-space: pre-wrap;      /* Mantém quebras de linha manuais */
-        word-break: break-all;      /* FORÇA QUEBRA DE PALAVRAS/LINKS GIGANTES */
-        word-wrap: break-word; 
-        overflow-x: hidden;         /* Impede rolagem lateral que distorcia tudo */
-    }
+/* STATUS */
+.loader-status {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #00ff9c;
+}
 
-    .loader-status {
-        font-size: 11px;
-        margin-top: 10px;
-        color: #00ff9c;
-        font-weight: bold;
-        min-height: 18px;
-        text-transform: uppercase;
-    }
+/* RESULTADO */
+pre#out {
+    background: #020202;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    text-align: left;
+    color: #00ff9c;
+    border: 1px solid #00ff9c;
 
-    .destaque-neon { color: #00ff9c; }
-    .data-gerado { font-size: 10px; color: #aaa; margin-top: 5px; display: block; }
+    max-height: 280px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.destaque-neon { color: #00ff9c; }
+.data-gerado { font-size: 10px; color: #888; }
 </style>
 </head>
+
 <body>
 
 <div class="card-painel">
     <div class="title-hacker">[ VIP_PAINEL ]</div>
-    
+
+    <!-- LOGO -->
+    <div class="logo-vip">
+        <div class="circle">
+            <img src="vip.png">
+        </div>
+    </div>
+
+    <!-- LINKS -->
     <div class="links-topo">
-        <a href="https://is.gd/th2b0P" target="_blank" class="btn-atalho btn-vip-grupo">💎 VIP GRUPO</a>
-        <a href="https://t.me/ApkBugado" target="_blank" class="btn-atalho btn-free-canal">📢 CANAL OFICIAL</a>
+        <a href="https://is.gd/th2b0P" target="_blank" class="btn-atalho">💎 ENTRAR VIP</a>
+        <a href="https://t.me/ApkBugado" target="_blank" class="btn-atalho">📢 GRUPO</a>
     </div>
 
+    <!-- LOGIN -->
     <div id="login-box">
-        <input type="password" id="senha" placeholder="INSIRA SEU CÓDIGO VIP">
-        <button onclick="login()">ACESSAR SISTEMA</button>
+        <input type="password" id="senha" placeholder="Digite código VIP">
+        <button onclick="login()">DESBLOQUEAR</button>
     </div>
 
+    <!-- PAINEL -->
     <div id="painel" style="display:none;">
-        <button id="btn-gerar" onclick="gerar()">⚡ GERAR NOVA LISTA PREMIUM</button>
-        <button onclick="copiar()" style="background:#111; color:#00ff9c; border:1px solid #00ff9c33; margin-top:8px; font-size:11px; padding:10px;">📋 COPIAR DADOS</button>
-        
+        <button id="btn-gerar" onclick="gerar()">GERAR LISTA</button>
+        <button onclick="copiar()">COPIAR</button>
+
         <div class="loader-status" id="status">STATUS: AGUARDANDO...</div>
-        
         <pre id="out">Clique em GERAR para buscar a lista.</pre>
     </div>
 </div>
 
 <script>
-const senhaCorreta = "9085"; // Mude a senha aqui se quiser
+const senhaCorreta = "1234";
 const baseGithub = "https://raw.githubusercontent.com/rafflores17-prog/painel-vip/main/";
 
-// 🔥 AUTO-VARREDURA: Carrega do combo1 ao combo30 automaticamente
 const arquivos = [];
-for(let i = 1; i <= 30; i++) {
-    arquivos.push(`combo${i}.txt`);
-}
+for(let i = 1; i <= 30; i++) arquivos.push(`combo${i}.txt`);
 
 let listaGlobal = [];
 let usados = [];
 let emProcesso = false;
 
-// Função de Login
 function login(){
     let s = document.getElementById('senha').value.trim();
     if(s === senhaCorreta){
         document.getElementById('painel').style.display = "block";
         document.getElementById('login-box').style.display = "none";
     } else {
-        alert("Código inválido, Mestre!");
-        document.getElementById('senha').value = ''; // Limpa o campo
+        alert("Código inválido!");
     }
 }
 
-// Data de Vencimento
 function proximoMes(){
     let d = new Date();
     d.setMonth(d.getMonth()+1);
     return d.toLocaleDateString();
 }
 
-// Extrator de Links M3U
 function extrairM3U(texto){
     let lista = [];
-    let regexM3U = /http[^\s]+get\.php[^\s]+/g;
-    let links = texto.match(regexM3U) || [];
-    
+    let links = texto.match(/http[^\s]+get\.php[^\s]+/g) || [];
     links.forEach(link=>{
         let user = (link.match(/username=([^&]+)/)||[])[1];
         let pass = (link.match(/password=([^&]+)/)||[])[1];
         let host = link.split("/get.php")[0];
-        if(user && pass && host) {
-            lista.push({link, user, pass, host, key: user+pass});
-        }
+        if(user && pass && host) lista.push({link,user,pass,host,key:user+pass});
     });
     return lista;
 }
 
-// Download Único dos 30 arquivos
 async function carregarBancoDeDados(){
     if(listaGlobal.length > 0) return;
-    
-    let btnGerar = document.getElementById('btn-gerar');
+
+    let btn = document.getElementById('btn-gerar');
     let out = document.getElementById('out');
-    
-    btnGerar.disabled = true;
-    out.textContent = "📡 Sincronizando banco de dados no GitHub...";
+
+    btn.disabled = true;
+    out.textContent = "SINCRONIZANDO...";
 
     for(let f of arquivos){
-        try {
+        try{
             let r = await fetch(baseGithub + f);
-            if(r.ok) { // Só processa se o arquivo existir
+            if(r.ok){
                 let txt = await r.text();
                 listaGlobal = listaGlobal.concat(extrairM3U(txt));
             }
-        } catch(e){ console.error("Ignorado:", f); }
+        }catch(e){}
     }
-    
-    // Remove duplicados gerais do banco
+
     let unico = {};
     listaGlobal.forEach(c => unico[c.key] = c);
     listaGlobal = Object.values(unico);
 
-    // Reativa o botão
-    btnGerar.disabled = false;
-    out.textContent = "CONEXÃO ESTABELECIDA. Clique em GERAR.";
+    btn.disabled = false;
+    out.textContent = "PRONTO PARA GERAR";
 }
 
-// Função Gerar Instantâneo (já com layout novo e emoticons)
 async function gerar(){
     if(emProcesso) return;
     emProcesso = true;
@@ -264,80 +278,51 @@ async function gerar(){
     let status = document.getElementById('status');
     let out = document.getElementById('out');
 
-    // 1. LIMPA A TELA IMEDIATAMENTE (Pro usuário não ver a lista trocando)
-    out.textContent = "⚙️ INICIANDO BYPASS...";
-    status.textContent = "🟡 STATUS: CONECTANDO...";
     btn.disabled = true;
+    out.textContent = "PROCESSANDO...";
+    status.textContent = "CONECTANDO...";
 
-    // Tenta carregar os 30 arquivos na primeira vez
-    if(listaGlobal.length === 0) {
-        await carregarBancoDeDados();
-    }
+    if(listaGlobal.length === 0) await carregarBancoDeDados();
 
-    if(listaGlobal.length === 0) {
-        out.textContent = "❌ Erro: Nenhum combo ativo encontrado no repositório GitHub.";
-        status.textContent = "🔴 STATUS: ERRO DE BASE";
-        btn.disabled = false;
-        emProcesso = false;
-        return;
-    }
-
-    // 2. ANIMAÇÃO HACKER FAKE
-    let fases = ["🔍 MINERANDO HOSTS...", "📡 DECRIPTANDO DADOS...", "🔐 VALIDANDO ACESSO...", "🚀 FINALIZANDO!"];
+    let fases = ["MINERANDO...", "VALIDANDO...", "FINALIZANDO..."];
     for(let f of fases){
-        status.textContent = "🟡 STATUS: " + f;
-        await new Promise(r => setTimeout(r, 600)); // Tempo fake pro Bypass
+        status.textContent = f;
+        await new Promise(r => setTimeout(r, 500));
     }
 
-    // 3. SELEÇÃO DA LISTA (Sem repetir)
     let disponivel = listaGlobal.filter(c => !usados.includes(c.key));
-    if(disponivel.length === 0){
-        usados = []; // Reseta o histórico se usar tudo
-        disponivel = listaGlobal;
-    }
+    if(disponivel.length === 0){ usados = []; disponivel = listaGlobal; }
 
-    let comboFinal = disponivel[Math.floor(Math.random() * disponivel.length)];
-    usados.push(comboFinal.key); // Marca como usado
+    let combo = disponivel[Math.floor(Math.random() * disponivel.length)];
+    usados.push(combo.key);
 
-    // 4. EXIBIÇÃO PREMIUM COM EMOTICONS E NOVO VISUAL
     let dataGerado = new Date().toLocaleTimeString();
-    
-    let resultadoHTML = `💎 <span class="destaque-neon">VIP APKBUGADO PREMIUM</span>
 
-🔗 URL M3U:
-${comboFinal.link}
+    out.innerHTML =
+`💎 <span class="destaque-neon">VIP APKBUGADO PREMIUM</span>
 
-⚙️ DADOS XTREAM:
-Host: ${comboFinal.host}
-User: ${comboFinal.user}
-Pass: ${comboFinal.pass}
+🔗 URL:
+${combo.link}
+
+⚙️ XTREAM:
+Host: ${combo.host}
+User: ${combo.user}
+Pass: ${combo.pass}
 
 📅 Vencimento: ${proximoMes()}
-━━━━━━━━━━━━━━━━━
-📢 CANAL: t.me/ApkBugado
-━━━━━━━━━━━━━━━━━
-⏱️ <span class="data-gerado">Gerado em: ${dataGerado}</span>`;
+━━━━━━━━━━━━━━
+⏱️ <span class="data-gerado">${dataGerado}</span>`;
 
-    out.innerHTML = resultadoHTML;
-    status.innerHTML = `🟢 STATUS: LISTA PRONTA (<span class="destaque-neon">${listaGlobal.length} Hosts</span> ON)`;
-    
+    status.innerHTML = `🟢 STATUS: PRONTO (${listaGlobal.length} HOSTS)`;
+
     btn.disabled = false;
     emProcesso = false;
 }
 
-// Função de Copiar (Sem copiar as tags HTML)
 function copiar(){
     let out = document.getElementById('out');
-    if(out.textContent.includes("Clique") || out.textContent.includes("INICIANDO")){
-        return;
-    }
-    // Cria um elemento temporário para limpar o HTML (cores)
-    let tempDiv = document.createElement("div");
-    tempDiv.innerHTML = out.innerHTML;
-    let textoLimpo = tempDiv.textContent;
-
-    navigator.clipboard.writeText(textoLimpo);
-    alert("✅ Dados copiados para o seu Poco M6!");
+    navigator.clipboard.writeText(out.textContent);
+    alert("Copiado!");
 }
 </script>
 
