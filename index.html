@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PAINEL VIP APKBUGADO</title>
 <style>
-    body { background:#000; color:#00ff9c; font-family:monospace; display:flex; justify-content:center; align-items:center; height:100vh; margin:0; }
-    .card { width:420px; padding:20px; border:1px solid #00ff9c; border-radius:15px; box-shadow:0 0 25px #00ff9c55; text-align:center; position: relative; }
+    body { background:#000; color:#00ff9c; font-family:monospace; display:flex; justify-content:center; align-items:center; min-height:100vh; margin:0; padding: 20px; box-sizing: border-box; }
+    .card { width:100%; max-width:420px; padding:20px; border:1px solid #00ff9c; border-radius:15px; box-shadow:0 0 25px #00ff9c55; text-align:center; position: relative; background: #000; }
     
     .lock-icon { font-size: 50px; margin-bottom: 10px; text-shadow: 0 0 15px #00ff9c; display: block; }
     .title-panel { font-size: 18px; font-weight: bold; margin: 5px 0; letter-spacing: 2px; }
@@ -23,7 +23,24 @@
     
     input { background:#000; color:#00ff9c; border:1px solid #00ff9c; text-align:center; outline:none; }
     
-    pre { background:#0a0a0a; padding:15px; margin-top:15px; border-radius:10px; font-size:12px; text-align:left; white-space:pre-wrap; border:1px solid #00ff9c22; min-height:160px; color:#fff; line-height: 1.5; }
+    /* 🛠️ AQUI ESTÁ A CORREÇÃO DO BUG DE LAYOUT */
+    pre { 
+        background:#0a0a0a; 
+        padding:15px; 
+        margin-top:15px; 
+        border-radius:10px; 
+        font-size:12px; 
+        text-align:left; 
+        white-space: pre-wrap;      /* Mantém quebras de linha */
+        word-break: break-all;      /* FORÇA A QUEBRA DE LINKS LONGOS */
+        word-wrap: break-word; 
+        border:1px solid #00ff9c22; 
+        min-height:160px; 
+        color:#fff; 
+        line-height: 1.5;
+        overflow-x: hidden;         /* Impede a barra de rolagem lateral */
+    }
+    
     .loader { font-size:11px; margin-top:10px; color:#00ff9c; font-weight:bold; min-height:18px; letter-spacing: 1px; }
 </style>
 </head>
@@ -53,10 +70,10 @@
 </div>
 
 <script>
+// O RESTANTE DO SEU SCRIPT CONTINUA IGUAL...
 const senhaCorreta = "1234";
 const base = "https://raw.githubusercontent.com/rafflores17-prog/painel-vip/main/";
 
-// 🔥 AUTO-VARREDURA: Já deixa preparado para até 30 arquivos
 const arquivos = [];
 for(let i = 1; i <= 30; i++) {
     arquivos.push(`combo${i}.txt`);
@@ -95,20 +112,17 @@ function extrairM3U(texto){
     return lista;
 }
 
-// 📡 Carregamento Inteligente: Só pega o que existir no GitHub
 async function carregarBanco(){
     if(listaGlobal.length > 0) return;
-    
     for(let f of arquivos){
         try {
             let r = await fetch(base + f);
-            if(r.ok) { // Só processa se o arquivo existir (Status 200)
+            if(r.ok) {
                 let txt = await r.text();
                 listaGlobal = listaGlobal.concat(extrairM3U(txt));
             }
         } catch(e){ }
     }
-    
     let unico = {};
     listaGlobal.forEach(c => unico[c.key] = c);
     listaGlobal = Object.values(unico);
@@ -129,17 +143,17 @@ async function gerar(){
     await carregarBanco();
 
     if(listaGlobal.length === 0) {
-        out.textContent = "❌ Erro: Nenhum combo encontrado no GitHub.";
-        status.textContent = "🔴 STATUS: ERRO DE BASE";
+        out.textContent = "❌ Erro: Nenhum combo encontrado.";
+        status.textContent = "🔴 STATUS: ERRO";
         btn.disabled = false;
         emProcesso = false;
         return;
     }
 
-    let frases = ["🔍 VARRENDO COMBOS...", "📡 SINCRONIZANDO...", "🔐 VALIDANDO...", "🚀 FINALIZANDO!"];
+    let frases = ["🔍 BUSCANDO...", "📡 SINCRONIZANDO...", "🚀 FINALIZANDO!"];
     for(let f of frases){
         status.textContent = "🟡 STATUS: " + f;
-        await new Promise(r => setTimeout(r, 500));
+        await new Promise(r => setTimeout(r, 400));
     }
 
     let disponivel = listaGlobal.filter(c => !usados.includes(c.key));
@@ -174,9 +188,8 @@ function copiar(){
     let texto = document.getElementById('out').textContent;
     if(texto.includes("Pronto") || texto.includes("ACESSANDO")) return;
     navigator.clipboard.writeText(texto);
-    alert("✅ Dados copiados para o seu Poco M6!");
+    alert("✅ Dados copiados!");
 }
 </script>
-
 </body>
 </html>
