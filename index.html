@@ -153,6 +153,32 @@ pre#out {
     word-break: break-word;
 }
 
+/* 🔥 HACKER ANIMAÇÃO */
+.hacker-text {
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px currentColor; }
+    to { text-shadow: 0 0 20px currentColor; }
+}
+
+.typing {
+    border-right: 2px solid currentColor;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(40, end), blink 0.7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
 .destaque-neon { color: #00ff9c; }
 .data-gerado { font-size: 10px; color: #888; }
 </style>
@@ -189,7 +215,7 @@ pre#out {
 </div>
 
 <script>
-let senhaCorreta = null; // 🔥 agora vem do servidor
+let senhaCorreta = null;
 const baseGithub = "https://raw.githubusercontent.com/rafflores17-prog/painel-vip/main/";
 
 const arquivos = [];
@@ -199,30 +225,26 @@ let listaGlobal = [];
 let usados = [];
 let emProcesso = false;
 
-// 🔥 BUSCAR SENHA EXTERNA
+/* 🔥 CORES DINÂMICAS */
+const cores = ["#00ff9c","#00eaff","#ff00ff","#ffd000","#ff3c3c","#8a2be2"];
+
+/* 🔥 SENHA EXTERNA */
 async function carregarSenha(){
     try {
         let r = await fetch("https://painel-vip-nine.vercel.app/senha.json");
-
-        if(!r.ok) throw new Error();
-
         let data = await r.json();
         senhaCorreta = data.senha;
-
-        console.log("Senha carregada:", senhaCorreta);
     } catch(e) {
         alert("Erro ao carregar senha!");
     }
 }
-
-// chama ao abrir
 carregarSenha();
 
 function login(){
     let s = document.getElementById('senha').value.trim();
 
     if(senhaCorreta === null){
-        alert("⏳ Aguarde... carregando sistema");
+        alert("⏳ Aguarde...");
         return;
     }
 
@@ -305,10 +327,14 @@ async function gerar(){
     let combo = disponivel[Math.floor(Math.random() * disponivel.length)];
     usados.push(combo.key);
 
+    let cor = cores[Math.floor(Math.random() * cores.length)];
+
     let dataGerado = new Date().toLocaleTimeString();
 
     out.innerHTML =
-`💎 <span class="destaque-neon">VIP APKBUGADO PREMIUM</span>
+`💎 <span class="hacker-text typing" style="color:${cor}">
+VIP APKBUGADO PREMIUM
+</span>
 
 🔗 URL:
 ${combo.link}
@@ -321,6 +347,9 @@ Pass: ${combo.pass}
 📅 Vencimento: ${proximoMes()}
 ━━━━━━━━━━━━━━
 ⏱️ <span class="data-gerado">${dataGerado}</span>`;
+
+    out.style.borderColor = cor;
+    out.style.boxShadow = `0 0 20px ${cor}`;
 
     status.innerHTML = `🟢 STATUS: PRONTO (${listaGlobal.length} HOSTS)`;
 
