@@ -3,233 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIP_PAINEL APKBUGADO PRO</title>
+    <title>VIP_PAINEL PRO</title>
     <style>
-        /* Estilo Centralizado e Compacto */
         body {
-            background: #000;
+            background-color: #000;
             color: #fff;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: sans-serif;
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
             padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 380px;
+            border: 2px solid #00ff9c;
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 156, 0.3);
+            text-align: center;
             box-sizing: border-box;
         }
 
-        /* O Painel da Foto */
-        .painel-pro {
-            width: 100%;
-            max-width: 380px;
-            background: #000;
-            border: 2px solid #00ff9c;
-            border-radius: 20px;
-            padding: 25px 20px;
-            box-shadow: 0 0 25px rgba(0, 255, 156, 0.5);
-            text-align: center;
-            position: relative;
-        }
-
-        .titulo-neon {
+        .header-title {
             color: #00ff9c;
-            font-size: 18px;
             font-weight: bold;
             letter-spacing: 2px;
-            margin: 0 0 20px 0;
-            text-transform: uppercase;
+            margin-bottom: 15px;
         }
 
-        /* 🔒 CADEADO GERADO POR CÓDIGO (SVG) */
-        .svg-cadeado {
-            width: 150px;
-            height: auto;
+        /* 🔒 CADEADO EM CÓDIGO (NUNCA BUGARÁ) */
+        .cadeado-svg {
+            width: 140px;
+            margin: 0 auto 15px;
             display: block;
-            margin: 0 auto 20px auto;
-            filter: drop-shadow(0 0 10px rgba(0, 255, 156, 0.7));
+            filter: drop-shadow(0 0 8px #00ff9c);
         }
 
-        /* Botões Superiores Lado a Lado */
-        .grid-atalhos {
+        .btns-top {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 8px;
+            margin-bottom: 15px;
         }
 
-        .btn-link {
+        .btn-small {
             background: rgba(0, 255, 156, 0.1);
+            border: 1px solid #00ff9c;
+            color: #00ff9c;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-gerar {
+            width: 100%;
+            background: #00ff9c;
+            color: #000;
+            border: none;
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px #00ff9c;
+        }
+
+        /* 🛡️ CAIXA DE DADOS BLINDADA (RESOLVE O CORTE) */
+        .box-dados {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: left;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-top: 10px;
+            /* Trava para não cortar texto */
+            white-space: pre-wrap;
+            word-break: break-all; 
+            display: none;
+        }
+
+        .status {
+            color: #00ff9c;
+            font-size: 11px;
+            margin-bottom: 10px;
+            display: none;
+        }
+
+        .btn-copiar {
+            width: 100%;
+            background: transparent;
             border: 1px solid #00ff9c;
             color: #00ff9c;
             padding: 10px;
             border-radius: 8px;
-            font-size: 11px;
-            text-decoration: none;
+            margin-top: 10px;
             font-weight: bold;
-            text-transform: uppercase;
+            display: none;
         }
-
-        .btn-link:hover {
-            transform: scale(1.05);
-            background: rgba(0, 255, 156, 0.2);
-        }
-
-        /* Inputs e Botão de Ação */
-        input {
-            width: 100%;
-            padding: 14px;
-            background: #111;
-            border: 1px solid #333;
-            border-radius: 10px;
-            color: #fff;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-            text-align: center;
-            font-size: 16px;
-        }
-
-        input:focus { border-color: #00ff9c; }
-
-        .btn-gerar {
-            width: 100%;
-            padding: 15px;
-            background: #00ff9c;
-            color: #000;
-            border: none;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 13px;
-            cursor: pointer;
-            box-shadow: 0 0 15px rgba(0, 255, 156, 0.4);
-            text-transform: uppercase;
-        }
-
-        .btn-gerar:disabled {
-            background: #333;
-            color: #666;
-            cursor: not-allowed;
-            box-shadow: none;
-        }
-
-        /* 🛡️ BOX DE RESULTADO (BLINDADO CONTRA BUG) */
-        pre#out {
-            background: #0a0a0a;
-            padding: 15px;
-            margin-top: 15px;
-            border-radius: 12px;
-            font-size: 12px;
-            text-align: left;
-            border: 1px dashed #333;
-            color: #fff;
-            
-            /* Correção definitiva para o link longo quebrando o layout */
-            white-space: pre-wrap;      /* Mantém quebras de linha */
-            word-break: break-all;      /* FORÇA QUEBRA DE LINKS GIGANTES */
-            word-wrap: break-word; 
-            overflow-x: hidden;         /* Impede rolagem lateral */
-            line-height: 1.5;
-        }
-
-        .status-txt {
-            color: #00ff9c;
-            font-size: 11px;
-            margin: 10px 0;
-            font-weight: bold;
-        }
-
-        .destaque-neon { color: #00ff9c; }
     </style>
 </head>
 <body>
 
-<div class="painel-pro">
-    <div class="titulo-neon">[ VIP_PAINEL ]</div>
-    
-    <svg class="svg-cadeado" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-        <circle cx="100" cy="100" r="95" fill="#000" stroke="#00ff9c" stroke-width="2"/>
-        <path d="M100 20 L100 180 M20 100 L180 100" stroke="#00ff9c22" stroke-width="1"/>
-        <path d="M150 70 A 50 50 0 1 1 50 70 A 50 50 0 0 1 150 70" fill="#00ff9c22" stroke="#00ff9c" stroke-width="3"/>
-        <text x="100" y="65" text-anchor="middle" font-size="16" fill="#00ff9c" font-family="Courier, monospace" font-weight="bold">VIP</text>
-        <rect x="55" y="105" width="90" height="70" rx="10" ry="10" fill="#000" stroke="#00ff9c" stroke-width="3"/>
-        <circle cx="100" cy="140" r="15" fill="#000" stroke="#00ff9c" stroke-width="3"/>
-        <path d="M100 155 L100 170" stroke="#00ff9c" stroke-width="3"/>
-        <path d="M100 80 L100 105 M92 115 A 8 8 0 0 1 108 115" stroke="#00ff9c" stroke-width="2"/>
+<div class="container">
+    <div class="header-title">[ VIP_PAINEL ]</div>
+
+    <svg class="cadeado-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="90" fill="none" stroke="#00ff9c" stroke-width="2" stroke-dasharray="10 5"/>
+        <path d="M70 100 V70 A30 30 0 0 1 130 70 V100" fill="none" stroke="#00ff9c" stroke-width="8"/>
+        <rect x="60" y="100" width="80" height="60" rx="10" fill="#000" stroke="#00ff9c" stroke-width="5"/>
+        <circle cx="100" cy="130" r="10" fill="#00ff9c"/>
     </svg>
 
-    <div class="grid-atalhos">
-        <a href="https://t.me/ApkBugadoGrupo" class="btn-atalho btn-link">💎 GRUPO VIP</a>
-        <a href="https://t.me/ApkBugado" class="btn-atalho btn-link">📢 CANAL</a>
+    <div class="btns-top">
+        <a href="#" class="btn-small">💎 GRUPO VIP</a>
+        <a href="#" class="btn-small">📢 CANAL</a>
     </div>
 
-    <div id="login-section">
-        <input type="password" id="key" placeholder="Digite código VIP">
-        <button class="btn-gerar" onclick="validar()">DESBLOQUEAR SISTEMA</button>
-    </div>
+    <button class="btn-gerar" onclick="gerar()">⚡ GERAR NOVA LISTA PREMIUM</button>
+    
+    <div class="status" id="st">🟢 STATUS: LISTA PRONTA (81 ON)</div>
 
-    <div id="painel-section" style="display:none;">
-        <button id="btn-gerar" class="btn-gerar" onclick="gerarListas()">⚡ GERAR NOVA LISTA PREMIUM</button>
-        
-        <div class="status-txt" id="status-txt">🟢 STATUS: AGUARDANDO COMANDO</div>
+    <div class="box-dados" id="result"></div>
 
-        <pre id="out">Clique em GERAR para buscar a lista.</pre>
-        
-        <button id="btn-copiar" class="btn-gerar" onclick="copiar()" style="background:#111; color:#00ff9c; border:1px solid #00ff9c; margin-top:10px; display:none;">📋 COPIAR DADOS</button>
-    </div>
+    <button class="btn-copiar" id="cp" onclick="copiar()">📋 COPIAR DADOS</button>
 </div>
 
 <script>
-    function validar() {
-        const pass = document.getElementById('key').value.trim();
-        if(pass === "9085") { // Mude a senha aqui
-            document.getElementById('area-login').style.display = "none";
-            document.getElementById('painel-section').style.display = "block";
-        } else {
-            alert("Código VIP inválido, Mestre!");
-            document.getElementById('key').value = '';
-        }
-    }
+    function gerar() {
+        const out = document.getElementById('result');
+        const st = document.getElementById('st');
+        const cp = document.getElementById('cp');
+        
+        // Link longo de teste para provar que não corta
+        const link = "http://bluebox.click:80/get.php?username=524c283068b001acf4a37f9515741237&password=3cf01a628867c662997c&type=m3u_plus&output=ts";
 
-    function proximoMes() {
-        let d = new Date();
-        d.setMonth(d.getMonth() + 1);
-        return d.toLocaleDateString();
-    }
-
-    function gerarListas() {
-        let out = document.getElementById('out');
-        let status = document.getElementById('status-txt');
-        let btnGerar = document.getElementById('btn-gerar');
-        let btnCopiar = document.getElementById('btn-copiar');
-
-        // Limpa a tela na hora
-        out.textContent = "⚙️ INICIANDO BYPASS...";
-        status.textContent = "🔴 STATUS: CONECTANDO...";
-        btnGerar.disabled = true;
-
-        setTimeout(() => {
-            // Link longo que costumava quebrar o layout
-            const linkLonguissimo = "http://bluebox.click:80/get.php?username=Felipe8263v&password=Luchini63&type=m3u_plus&output=ts";
-            
-            status.innerHTML = `🟢 STATUS: LISTA PRONTA (<span class="destaque-neon">1 Hosts</span> ON)`;
-            out.innerHTML = `💎 VIP APKBUGADO PREMIUM\n\n🔗 URL M3U:\n<span class="destaque-neon">${linkLonguissimo}</span>\n\n⚙️ XTREAM CODES:\nHost: http://bluebox.click:80\nUser: Felipe8263v\nPass: Luchini63\n\n📅 Vencimento: ${proximoMes()}\n━━━━━━━━━━━━━━━━━\n📢 CANAL: t.me/ApkBugado`;
-            
-            btnGerar.disabled = false;
-            btnCopiar.style.display = "block";
-        }, 1200);
+        out.innerHTML = `💎 VIP APKBUGADO PREMIUM\n\n🔗 URL M3U:\n<span style="color:#00ff9c">${link}</span>\n\n⚙️ DADOS XTREAM:\nHost: http://bluebox.click:80\nUser: 524c283068b001acf4a37f951...\nPass: 3cf01a628867c662997c\n\n📅 Vencimento: 30/04/2026`;
+        
+        out.style.display = "block";
+        st.style.display = "block";
+        cp.style.display = "block";
     }
 
     function copiar() {
-        const textoValores = document.getElementById('out').innerText;
-        if(textoValores.includes("Clique") || textoValores.includes("INICIANDO")) return;
-        
-        // Remove tags HTML se tiver
-        const tempDiv = document.createElement("div");
-        tempDiv.innerHTML = textoValores;
-        const textoLimpo = tempDiv.textContent;
-
-        navigator.clipboard.writeText(textoLimpo);
-        alert("✅ Dados copiados para o seu Poco M6!");
+        const text = document.getElementById('result').innerText;
+        navigator.clipboard.writeText(text);
+        alert("Copiado!");
     }
 </script>
 
