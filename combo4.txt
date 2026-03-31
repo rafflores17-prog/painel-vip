@@ -1,0 +1,413 @@
+┏●•~¹°”ˆ˜¨ 𝙏𝙚𝙨𝙩𝙚 𝙙𝙤 𝙎𝙚𝙧𝙫𝙞𝙙𝙤𝙧 ¨˜ˆ”°¹~•
+┣─⭐Desempenho ► ★★★☆☆ MÉDIO
+┣─⚡Velocidade ► Média de 1.14s
+┣─📡Teste ► 20 Canais OK | 0 Falhas
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─📍IP do Host ► 104.21.86.232
+┣─📺Canais ► 1700
+┣─🎬Filmes ► 20223
+┣─🎞️Séries ► 8557
+┣─📦Conteúdo Total ► 30480
+┣─✨Qualidade do VOD ► ᴱˣᶜᵉˡᵉⁿᵗᵉ(💎)
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► lidiane6312
+┣─🔒Senha ► 050862a
+┣─🟢Status ► Online
+┣─🗓️Criado ► 26/11/2025
+┣─⏳Expira ► 06/02/2026
+┣─⌛Dias Restantes ► 20 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=lidiane6312&password=050862a&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:37:08 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► JCarrano
+┣─🔒Senha ► C@bos992024
+┣─🟢Status ► Online
+┣─🗓️Criado ► 06/05/2024
+┣─⏳Expira ► 16/02/2026
+┣─⌛Dias Restantes ► 30 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=JCarrano&password=C@bos992024&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:38:44 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► andrers
+┣─🔒Senha ► tvand699
+┣─🟢Status ► Online
+┣─🗓️Criado ► 08/12/2025
+┣─⏳Expira ► 26/01/2026
+┣─⌛Dias Restantes ► 9 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=andrers&password=tvand699&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:40:08 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► Drmgraca
+┣─🔒Senha ► 7276drmgrac
+┣─🟢Status ► Online
+┣─🗓️Criado ► 16/12/2025
+┣─⏳Expira ► 20/01/2026
+┣─⌛Dias Restantes ► 3 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=Drmgraca&password=7276drmgrac&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:40:28 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► jefeso8583
+┣─🔒Senha ► 85725438593
+┣─🟢Status ► Online
+┣─🗓️Criado ► 25/03/2025
+┣─⏳Expira ► 16/02/2026
+┣─⌛Dias Restantes ► 30 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=jefeso8583&password=85725438593&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:40:41 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► valdeciz0112
+┣─🔒Senha ► jfbq91564521
+┣─🟢Status ► Online
+┣─🗓️Criado ► 08/12/2025
+┣─⏳Expira ► 30/09/2026
+┣─⌛Dias Restantes ► 256 dias
+┣─📶Conexões Ativas ► 2
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=valdeciz0112&password=jfbq91564521&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:42:23 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► alcino8666
+┣─🔒Senha ► 86667032ncl
+┣─🟢Status ► Online
+┣─🗓️Criado ► 13/11/2024
+┣─⏳Expira ► 28/01/2026
+┣─⌛Dias Restantes ► 11 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=alcino8666&password=86667032ncl&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:43:02 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► Edilberto983040416
+┣─🔒Senha ► 557745707547
+┣─🟢Status ► Online
+┣─🗓️Criado ► 26/01/2025
+┣─⏳Expira ► 11/02/2026
+┣─⌛Dias Restantes ► 25 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=Edilberto983040416&password=557745707547&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:43:36 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► 12981853773
+┣─🔒Senha ► a981853773a
+┣─🟢Status ► Online
+┣─🗓️Criado ► 17/10/2025
+┣─⏳Expira ► 04/02/2026
+┣─⌛Dias Restantes ► 18 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=12981853773&password=a981853773a&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:44:11 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► andresaseq
+┣─🔒Senha ► wff8xxe4ci
+┣─🟢Status ► Online
+┣─🗓️Criado ► 13/08/2025
+┣─⏳Expira ► 21/01/2026
+┣─⌛Dias Restantes ► 4 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=andresaseq&password=wff8xxe4ci&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:44:39 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► marcelo.cliente
+┣─🔒Senha ► climarcelo132
+┣─🟢Status ► Online
+┣─🗓️Criado ► 30/03/2024
+┣─⏳Expira ► 10/02/2026
+┣─⌛Dias Restantes ► 24 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=marcelo.cliente&password=climarcelo132&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:46:05 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► thay123
+┣─🔒Senha ► thay123
+┣─🟢Status ► Online
+┣─🗓️Criado ► 08/12/2025
+┣─⏳Expira ► 02/11/2026
+┣─⌛Dias Restantes ► 289 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=thay123&password=thay123&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:46:10 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► Gabriella19998911878
+┣─🔒Senha ► 55305003mnb
+┣─🟢Status ► Online
+┣─🗓️Criado ► 05/06/2025
+┣─⏳Expira ► 09/02/2026
+┣─⌛Dias Restantes ► 23 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=Gabriella19998911878&password=55305003mnb&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:46:14 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► DouglasUKK
+┣─🔒Senha ► 07763871540
+┣─🟢Status ► Online
+┣─🗓️Criado ► 10/11/2024
+┣─⏳Expira ► 08/02/2026
+┣─⌛Dias Restantes ► 22 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=DouglasUKK&password=07763871540&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:50:09 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► talita73728uei
+┣─🔒Senha ► 73738talita828
+┣─🟢Status ► Online
+┣─🗓️Criado ► 08/12/2025
+┣─⏳Expira ► 14/02/2026
+┣─⌛Dias Restantes ► 29 dias
+┣─📶Conexões Ativas ► 2
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=talita73728uei&password=73738talita828&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:50:12 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► danicamara
+┣─🔒Senha ► acg2010v
+┣─🟢Status ► Online
+┣─🗓️Criado ► 08/12/2025
+┣─⏳Expira ► 16/01/2026
+┣─⌛Dias Restantes ► 0 dias
+┣─📶Conexões Ativas ► 2
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=danicamara&password=acg2010v&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:50:36 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► f98lugg8
+┣─🔒Senha ► pzczhs7r
+┣─🟢Status ► Online
+┣─🗓️Criado ► 08/12/2025
+┣─⏳Expira ► 15/02/2026
+┣─⌛Dias Restantes ► 29 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=f98lugg8&password=pzczhs7r&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:51:35 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► Viv1an3
+┣─🔒Senha ► Al3ssam1ga
+┣─🟢Status ► Online
+┣─🗓️Criado ► 02/04/2024
+┣─⏳Expira ► 16/02/2026
+┣─⌛Dias Restantes ► 30 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=Viv1an3&password=Al3ssam1ga&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:52:21 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► tuanyrodrigues01tv
+┣─🔒Senha ► 1739174maac
+┣─🟢Status ► Online
+┣─🗓️Criado ► 26/08/2025
+┣─⏳Expira ► 28/01/2026
+┣─⌛Dias Restantes ► 11 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=tuanyrodrigues01tv&password=1739174maac&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:53:45 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://mnba.shop:80
+┣─📍IP do Host ► 104.21.86.232
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► gilmar4429
+┣─🔒Senha ► 96064429agg
+┣─🟢Status ► Online
+┣─🗓️Criado ► 07/08/2025
+┣─⏳Expira ► 10/02/2026
+┣─⌛Dias Restantes ► 24 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://mnba.shop:80/get.php?username=gilmar4429&password=96064429agg&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online1
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 22:53:46 ⁃ 16/01/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
